@@ -1,0 +1,51 @@
+﻿@inherits LayoutComponentBase
+
+
+<header class="container">
+
+    <img src="/icon_ktk.svg"
+         width="60"
+         height="60" />
+    <span class="logo">&nbsp;&nbsp;&nbsp;KTK.ACCESSPOINT</span>
+
+    <nav>
+        <input type="checkbox" id="btn-menu" />
+        <label for="btn-menu"></label>
+
+        <ul class="list-menu">
+            <li>
+                <NavLink href="/"
+                         Match="NavLinkMatch.All"
+                         class="linknav desktop-only">
+                    Главная
+                </NavLink>
+            </li>
+            <li>
+                <NavLink class="linknav desktop-only"
+                         href="login">
+                    Личный кабинет
+                </NavLink>
+            </li>
+            <li>
+                <a class="linknav desktop-only" href="#">База знаний</a>
+            </li>
+            <li>
+                <a class="linknav desktop-only" href="https://ktkknitu.ru/">Расписание</a>
+            </li>
+            <li>
+                <a class="linknavvk desktop-only" href="https://vk.com/ktk_kstu">VK</a>
+            </li>
+            <li>
+                <a class="linknavtg desktop-only" href="https://t.me/ktk_knitu16">TG</a>
+            </li>
+        </ul>
+        <a href="https://www.kstu.ru/1leveltest.jsp?idparent=1180"
+           class="btn desktop-only" target="_blank"> Официальный сайт КТК</a>
+    </nav>
+
+    <div class="btn-up btn-up_hide desktop-only"></div>
+
+</header>
+
+
+@Body

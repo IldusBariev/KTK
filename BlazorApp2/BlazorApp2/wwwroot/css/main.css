@@ -1,0 +1,1200 @@
+@charset "UTF-8";
+
+body {
+    font-family: "Raleway";
+    background-image: url(/back.png);
+    background-repeat: repeat;
+}
+
+header {
+    font-family: "Raleway";
+    background-color: #8B0000;
+    border-radius: 15px;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex; /* Добавляем Flexbox */
+    align-items: center; /* Выравниваем элементы по вертикали */
+}
+
+.container {
+    max-width: 72%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.logo {
+    color: #E8CFC4;
+    font-weight: 900;
+    font-size: 25px;
+}
+
+header nav {
+    color: #E8CFC4;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 0.5%;
+    margin-left: auto;
+    flex-shrink: 0;
+    display: flex; /* Делаем nav flex-контейнером */
+    align-items: center; /* Выравниваем элементы по вертикали */
+    gap: 20px; /* Добавляем отступ между элементами */
+}
+
+.btn {
+    color: #30344F;
+    font-weight: 600;
+    background-color: #E8CFC4;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 12px 16px;
+    display: flex;
+    white-space: nowrap;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Анимация для background-color и color */
+}
+
+    .btn:hover {
+        background-color: #554D66; /* Новый цвет фона при наведении */
+        color: #E8CFC4; /* Новый цвет текста при наведении */
+    }
+
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0; /* Убираем лишний padding */
+    margin: 0; /* Убираем лишний margin */
+    gap: 20px; /* Добавляем отступ между элементами списка */
+}
+
+    header nav ul li {
+        list-style: none;
+        display: flex;
+        margin: auto;
+    }
+
+.linknav {
+    color: #E8CFC4;
+    white-space: nowrap;
+}
+/**/
+.linknavvk {
+    color: #E8CFC4;
+    white-space: nowrap;
+    content: url(/vk.svg);
+}
+
+.linknavtg {
+    color: #E8CFC4;
+    white-space: nowrap;
+    content: url(/tg.svg);
+}
+
+a {
+    text-decoration: none;
+    color: #8C828A;
+}
+
+
+.menu-container {
+    color: #E8CFC4;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 72%;
+    display: flex; /* Включаем Flexbox */
+    justify-content: space-between; /* Распределяет пространство между элементами */
+    gap: 20px; /* Отступ между элементами */
+    align-items: stretch; /* Растягивает элементы на всю высоту */
+}
+
+.main_menu_right {
+    width: calc(50% - 10px); /* Ширина с учетом gap */
+    font-family: "Raleway";
+    background-color: #8B0000;
+    border-radius: 15px;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 0; /* Убираем внешний отступ слева */
+    margin-right: 0; /* Убираем внешний отступ справа */
+}
+
+.main_menu_right_light {
+    width: calc(50% - 10px); /* Ширина с учетом gap */
+    font-family: "Raleway";
+    background-color: #E8CFC4;
+    border-radius: 15px;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 0; /* Убираем внешний отступ слева */
+    margin-right: 0; /* Убираем внешний отступ справа */
+}
+
+
+
+.main_menu_left {
+    width: calc(50% - 10px); /* Ширина с учетом gap */
+    font-family: "Raleway";
+    background-color: #8B0000;
+    border-radius: 15px;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 0; /* Убираем внешний отступ слева */
+    margin-right: 0; /* Убираем внешний отступ справа */
+}
+
+.main_menu_left_light {
+    width: calc(50% - 10px); /* Ширина с учетом gap */
+    font-family: "Raleway";
+    background-color: #E8CFC4;
+    border-radius: 15px;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 0; /* Убираем внешний отступ слева */
+    margin-right: 0; /* Убираем внешний отступ справа */
+}
+
+.menu-container h1 {
+    font-size: 30px;
+    font-weight: 900;
+    text-align: left;
+    padding-left: 2%;
+}
+
+.menu-container h2 {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+    color: #47485E;
+    background-color: #E8CFC4;
+    border-radius: 15px;
+    padding-left: 2%;
+    padding-right: 1%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Анимация для background-color и color */
+}
+
+    .menu-container h2:hover {
+        background-color: #554D66; /* Новый цвет фона при наведении */
+        color: #E8CFC4; /* Новый цвет текста при наведении */
+    }
+
+.menu-container h3 {
+    font-size: 15px;
+    font-weight: 500;
+    text-align: left;
+    padding-left: 2%;
+}
+
+.menu-container h4 {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+    color: #47485E;
+    background-color: #E8CFC4;
+    border-radius: 15px;
+    padding-left: 2%;
+    padding-right: 1%;
+    padding-top: 10px;
+    padding-bottom: 12px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Анимация для background-color и color */
+}
+
+    .menu-container h4:hover {
+        background-color: #554D66; /* Новый цвет фона при наведении */
+        color: #E8CFC4; /* Новый цвет текста при наведении */
+    }
+
+.newsbuttn {
+    color: #E8CFC4;
+    font-weight: 600;
+    background-color: #554D66;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    display: inline-flex; /* Изменяем на inline-flex */
+    padding: 12px 16px; /* Отступы вокруг текста */
+    white-space: nowrap; /* Запрещаем перенос текста */
+    text-align: center; /* Выравниваем текст по центру */
+    align-items: center; /* Выравниваем содержимое по вертикали */
+    justify-content: center; /* Выравниваем содержимое по горизонтали */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Анимация для background-color и color */
+    margin-left: 5%;
+}
+
+    .newsbuttn:hover {
+        background-color: #E8CFC4; /* Новый цвет фона при наведении */
+        color: #554D66; /* Новый цвет текста при наведении */
+    }
+
+.schedule {
+    width: 100%;
+    font-family: "Raleway";
+    background-color: #4A2D57;
+    border-radius: 15px;
+    font-weight: 600;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 12px 16px;
+}
+
+.schedule1 {
+    width: 100%;
+    font-family: "Raleway";
+    background-color: #E8CFC4;
+    border-radius: 15px;
+}
+
+.schedule2 {
+    width: 100%;
+    font-family: "Raleway";
+    background-color: #8B0000;
+    border-radius: 15px;
+}
+
+.sdate {
+    color: #8C828A;
+    font-weight: 600;
+    background-color: #E8CFC4;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+    margin-left: 2%;
+    display: inline-flex; /* Изменяем на inline-flex */
+    padding: 8px 12px; /* Отступы вокруг текста */
+    white-space: nowrap; /* Запрещаем перенос текста */
+    text-align: center; /* Выравниваем текст по центру */
+    align-items: center; /* Выравниваем содержимое по вертикали */
+    justify-content: center; /* Выравниваем содержимое по горизонтали */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Анимация для background-color и color */
+}
+
+    .sdate:hover {
+        background-color: #554D66; /* Новый цвет фона при наведении */
+        color: #E8CFC4; /* Новый цвет текста при наведении */
+    }
+
+.change {
+    color: #8C828A;
+    font-weight: 600;
+    background-color: #E8CFC4;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+    display: inline-flex; /* Изменяем на inline-flex */
+    padding: 8px 12px; /* Отступы вокруг текста */
+    white-space: nowrap; /* Запрещаем перенос текста */
+    text-align: center; /* Выравниваем текст по центру */
+    align-items: center; /* Выравниваем содержимое по вертикали */
+    justify-content: center; /* Выравниваем содержимое по горизонтали */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Анимация для background-color и color */
+}
+
+    .change:hover {
+        background-color: #554D66; /* Новый цвет фона при наведении */
+        color: #E8CFC4; /* Новый цвет текста при наведении */
+    }
+
+.choice {
+    color: #8C828A;
+    font-weight: 600;
+    background-color: #E8CFC4;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+    display: inline-flex; /* Изменяем на inline-flex */
+    padding: 8px 12px; /* Отступы вокруг текста */
+    white-space: nowrap; /* Запрещаем перенос текста */
+    text-align: center; /* Выравниваем текст по центру */
+    align-items: center; /* Выравниваем содержимое по вертикали */
+    justify-content: center; /* Выравниваем содержимое по горизонтали */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Анимация для background-color и color */
+}
+
+    .choice:hover {
+        background-color: #554D66; /* Новый цвет фона при наведении */
+        color: #E8CFC4; /* Новый цвет текста при наведении */
+    }
+
+.raspisanie {
+    width: 75%;
+    font-family: "Raleway";
+    background-color: #E8CFC4;
+    color: #47485E;
+    border-radius: 15px;
+    padding: 3px;
+    margin: 2%;
+}
+
+    .raspisanie h2 {
+        font-family: "Raleway";
+        background-color: #47485E;
+        color: #E8CFC4;
+        font-size: 20px;
+        font-weight: 600;
+        border-radius: 15px;
+        display: inline-flex; /* Изменяем на inline-flex */
+        white-space: nowrap; /* Запрещаем перенос текста */
+        text-align: center; /* Выравниваем текст по центру */
+        align-items: center; /* Выравниваем содержимое по вертикали */
+        justify-content: center; /* Выравниваем содержимое по горизонтали */
+        margin-top: 0; /* Убираем верхний отступ */
+        margin-bottom: 0; /* Убираем нижний отступ */
+        padding-top: 5px; /* Уменьшаем верхний внутренний отступ */
+        padding-bottom: 5px; /* Уменьшаем нижний внутренний отступ */
+        line-height: 1.2; /* Уменьшаем высоту строки */
+        transition: background-color 0.3s ease, color 0.3s ease; /* Анимация для background-color и color */
+    }
+
+        .raspisanie h2:hover {
+            background-color: #8B0000; /* Новый цвет фона при наведении */
+            color: #E8CFC4; /* Новый цвет текста при наведении */
+        }
+
+    .raspisanie h3 {
+        font-family: "Raleway";
+        background-color: #8B0000;
+        color: #E8CFC4;
+        font-size: 20px;
+        font-weight: 600;
+        border-radius: 15px;
+        display: inline-flex; /* Изменяем на inline-flex */
+        white-space: nowrap; /* Запрещаем перенос текста */
+        text-align: center; /* Выравниваем текст по центру */
+        align-items: center; /* Выравниваем содержимое по вертикали */
+        justify-content: center; /* Выравниваем содержимое по горизонтали */
+        margin-top: 0; /* Убираем верхний отступ */
+        margin-bottom: 0; /* Убираем нижний отступ */
+        padding-top: 5px; /* Уменьшаем верхний внутренний отступ */
+        padding-bottom: 5px; /* Уменьшаем нижний внутренний отступ */
+        padding-right: 10px;
+        line-height: 1.2; /* Уменьшаем высоту строки */
+        transition: background-color 0.3s ease, color 0.3s ease; /* Анимация для background-color и color */
+    }
+
+        .raspisanie h3:hover {
+            background-color: #47485E; /* Новый цвет фона при наведении */
+            color: #E8CFC4; /* Новый цвет текста при наведении */
+        }
+
+.custom-line {
+    border: none; /* Убираем стандартную обводку */
+    height: 6px; /* Толщина линии */
+    background-color: #47485E; /* Цвет линии */
+    margin-right: 20px; /* Отступы сверху и снизу */
+}
+
+.schedulebtn {
+    color: #E8CFC4;
+    font-weight: 600;
+    background-color: #554D66;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    display: inline-flex; /* Изменяем на inline-flex */
+    padding: 12px 16px; /* Отступы вокруг текста */
+    margin-left: 2%;
+    margin-bottom: 2%;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Анимация для background-color и color */
+}
+
+    .schedulebtn:hover {
+        background-color: #E8CFC4; /* Новый цвет фона при наведении */
+        color: #554D66; /* Новый цвет текста при наведении */
+    }
+
+.basebuttn {
+    color: #E8CFC4;
+    font-weight: 600;
+    background-color: #554D66;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 1%;
+    display: inline-flex; /* Изменяем на inline-flex */
+    padding: 12px 16px; /* Отступы вокруг текста */
+    white-space: nowrap; /* Запрещаем перенос текста */
+    text-align: center; /* Выравниваем текст по центру */
+    align-items: center; /* Выравниваем содержимое по вертикали */
+    justify-content: center; /* Выравниваем содержимое по горизонтали */
+    transition: 0.6s; /* Анимация для background-color и color */
+}
+
+    .basebuttn:hover {
+        transform: scale(1.2);
+        background-color: #E8CFC4; /* Новый цвет фона при наведении */
+        color: #554D66; /* Новый цвет текста при наведении */
+    }
+
+.basebuttn_light {
+    color: #E8CFC4;
+    font-weight: 600;
+    background-color: #8B0000;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 1%;
+    display: inline-flex; /* Изменяем на inline-flex */
+    padding: 12px 16px; /* Отступы вокруг текста */
+    white-space: nowrap; /* Запрещаем перенос текста */
+    text-align: center; /* Выравниваем текст по центру */
+    align-items: center; /* Выравниваем содержимое по вертикали */
+    justify-content: center; /* Выравниваем содержимое по горизонтали */
+    transition: 0.6s; /* Анимация для background-color и color */
+}
+
+    .basebuttn_light:hover {
+        transform: scale(1.2);
+        background-color: #554D66; /* Новый цвет фона при наведении */
+        color: #E8CFC4; /* Новый цвет текста при наведении */
+    }
+
+.base_txt {
+    margin-top: 20.1px;
+    margin-bottom: 20.1px;
+    color: #8B0000;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: left;
+    padding-left: 2%;
+}
+
+.priemka {
+    width: 90%;
+    font-family: "Raleway";
+    color: #e8cfc4;
+    border-radius: 15px;
+    padding: 3px;
+    margin: 2%;
+}
+
+    .priemka h6 {
+        font-family: "Raleway";
+        color: #e8cfc4;
+        padding: 3px;
+        margin: 2%;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 900;
+    }
+
+    .priemka h5 {
+        font-family: "Raleway";
+        color: #4a2d57;
+        padding: 3px;
+        margin: 2%;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 900;
+    }
+
+
+.feedback {
+    width: 100%;
+    font-family: "Raleway";
+    background-color: #E8CFC4;
+    font-size: 20px;
+    font-weight: 700;
+    color: #47485E;
+    border-radius: 15px;
+    padding: 10px; /* Внутренний отступ для input */
+    border: none;
+    margin-bottom: 10px; /* Отступ снизу между input */
+    box-sizing: border-box; /* Учитываем padding в ширине */
+    display: flex;
+}
+
+.feedbackbutn {
+    width: 100%;
+    font-family: "Raleway";
+    background-color: #47485E;
+    font-size: 20px;
+    font-weight: 700;
+    color: #E8CFC4;
+    border-radius: 15px;
+    padding: 10px; /* Внутренний отступ для кнопки */
+    border: none;
+    margin-top: 10px; /* Отступ сверху для кнопки */
+    box-sizing: border-box; /* Учитываем padding в ширине */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Анимация для background-color и color */
+}
+
+    .feedbackbutn:hover {
+        background-color: #E8CFC4; /* Новый цвет фона при наведении */
+        color: #554D66; /* Новый цвет текста при наведении */
+    }
+
+.feedback_back {
+    font-family: "Raleway";
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+    .feedback_back h1 {
+        font-size: 25px;
+        font-weight: 700;
+        margin-top: 0%;
+        margin-left: 2%;
+        margin-bottom: 0%; /* Отступ снизу для заголовков */
+    }
+
+.custom-line-priemka {
+    border: none; /* Убираем стандартную обводку */
+    height: 6px; /* Толщина линии */
+    background-color: #47485E; /* Цвет линии */
+    margin-left: 4%;
+}
+
+
+
+.slideshow-container {
+    max-width: 600px;
+    position: relative;
+    margin: 5%;
+}
+
+.slide {
+    max-height: 500px;
+    display: none;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.active {
+    display: block;
+}
+
+/* Анимация перехода */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.slideshow-containert {
+    max-width: 600px;
+    position: relative;
+    margin: 5%;
+}
+
+.slidet {
+    max-height: 500px;
+    display: none;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.activet {
+    display: block;
+}
+
+.fadet {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+
+
+/*Адаптив*/
+
+@media (max-width: 1900px) {
+    /*Header*/
+
+    .container img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .list-menu {
+        gap: 14px;
+    }
+
+    .linknav {
+        font-size: 18px;
+    }
+
+    .linknavtg,
+    .linknavvk {
+        max-width: 40px;
+        max-height: 40px;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 10px 13px;
+        border-radius: 10px;
+    }
+
+    .container img {
+        width: 50px;
+        height: 50px;
+    }
+
+}
+
+@media (max-width: 1500px) {
+    /*header*/
+    .container img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .list-menu {
+        gap: 12px;
+    }
+
+    .linknav {
+        font-size: 15px;
+    }
+
+    .linknavtg,
+    .linknavvk {
+        max-width: 35px;
+        max-height: 35px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px 10px;
+        border-radius: 7px;
+    }
+
+
+
+}
+
+
+@media (max-width: 1300px) {
+
+    .container img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .logo {
+        font-size: 16px;
+    }
+
+    .list-menu {
+        gap: 10px;
+    }
+
+    .linknav {
+        font-size: 13px;
+    }
+
+    .linknavtg,
+    .linknavvk {
+        max-width: 30px;
+        max-height: 30px;
+    }
+
+    .btn {
+        font-size: 12px;
+        padding: 7px 8px;
+        border-radius: 5px;
+    }
+
+}
+
+@media (max-width: 1200px) {
+
+    .container img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .logo {
+        font-size: 13px;
+    }
+
+    .list-menu {
+        gap: 8px;
+    }
+
+    .linknav {
+        font-size: 11px;
+    }
+
+    .linknavtg,
+    .linknavvk {
+        max-width: 27px;
+        max-height: 27px;
+    }
+
+    .btn {
+        font-size: 10px;
+        padding: 5px 6px;
+        border-radius: 4px;
+    }
+}
+
+@media (max-width: 950px) {
+
+}
+
+@media (max-width: 768px) {
+    .linknavvk {
+        color: #E8CFC4;
+        white-space: nowrap;
+        content: 'VK';
+    }
+
+    .linknavtg {
+        color: #E8CFC4;
+        white-space: nowrap;
+        content: 'TG';
+    }
+
+    .container {
+        width: 100%; /* Блоки занимают всю ширину контейнера */
+        max-width: 600px; /* Ограничение максимальной ширины */
+        margin-left: auto;
+        margin-right: auto; /* Центрирование блоков */
+    }
+
+
+    .header {
+        width: 90%; /* Блоки занимают всю ширину контейнера */
+        max-width: 600px; /* Ограничение максимальной ширины */
+        margin-left: auto;
+        margin-right: auto; /* Центрирование блоков */
+    }
+
+    .logo {
+        font-size: 10px;
+    }
+
+
+
+
+
+    .menu-container {
+        flex-direction: column;
+        width: 99%; /* Блоки занимают всю ширину контейнера */
+        max-width: 600px; /* Ограничение максимальной ширины */
+        margin-left: auto;
+        margin-right: auto; /* Центрирование блоков */
+    }
+
+    .main_menu_left,
+    .main_menu_right,
+    .main_menu_left_light,
+    .main_menu_right_light {
+        width: 100%; /* Блоки занимают всю ширину контейнера */
+        max-width: 600px; /* Ограничение максимальной ширины */
+        margin-left: auto;
+        margin-right: auto; /* Центрирование блоков */
+    }
+
+    .menu-container h1 {
+        font-size: 24px;
+    }
+
+    .menu-container h2,
+    .menu-container h4 {
+        font-size: 16px;
+        padding: 8px 10px;
+    }
+
+    .raspisanie {
+        width: 90%; /* Блоки занимают всю ширину контейнера */
+        max-width: 600px; /* Ограничение максимальной ширины */
+        margin-left: auto;
+        margin-right: auto; /* Центрирование блоков */
+    }
+
+        .raspisanie h2,
+        .raspisanie h3 {
+            font-size: 16px;
+            display: block;
+            width: 100%;
+            margin: 5px 0;
+        }
+
+    .schedulebtn,
+    .basebuttn,
+    .basebuttn_light {
+        font-size: 16px;
+        padding: 8px 12px;
+        margin: 5px 0;
+    }
+
+    .feedback {
+        font-size: 16px;
+    }
+
+    .slideshow-container {
+        width: 90%; /* Блоки занимают всю ширину контейнера */
+        max-width: 600px; /* Ограничение максимальной ширины */
+        margin-left: auto;
+        margin-right: auto; /* Центрирование блоков */
+    }
+
+    .custom-line,
+    .custom-line-priemka {
+        margin: 10px 0;
+    }
+
+    .priemka h6 {
+        font-size: 24px;
+    }
+
+    /* Скрываем сложные элементы */
+    .desktop-only {
+        display: none;
+    }
+
+    /* Адаптивная таблица расписания */
+    .raspisanie {
+        overflow-x: auto;
+        width: 90%; /* Блоки занимают всю ширину контейнера */
+        max-width: 600px; /* Ограничение максимальной ширины */
+        margin-left: auto;
+        margin-right: auto; /* Центрирование блоков */
+    }
+
+    .basebuttn {
+        word-break: break-all;
+    }
+
+    .basebuttn_light {
+        word-break: break-all;
+    }
+}
+
+/* Дополнительные адаптации для очень маленьких экранов */
+@media (max-width: 480px) {
+    .logo {
+        font-size: 8px;
+    }
+
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .schedule {
+        width: 90%; /* Блоки занимают всю ширину контейнера */
+        max-width: 600px; /* Ограничение максимальной ширины */
+        margin-left: auto;
+        margin-right: auto; /* Центрирование блоков */
+    }
+
+    .menu-container h1 {
+        font-size: 20px;
+    }
+
+    .base_txt {
+        font-size: 24px;
+    }
+
+    .priemka h6 {
+        font-size: 20px;
+    }
+}
+
+.btn-up {
+    /* фиксированное позиционирование */
+    position: fixed;
+    /* цвет фона */
+    background-color: #8b0000;
+    /* расстояние от правого края окна браузера */
+    right: 20px;
+    /* расстояние от нижнего края окна браузера */
+    bottom: 0;
+    /* скругление верхнего левого угла */
+    border-top-left-radius: 8px;
+    /* скругление верхнего правого угла */
+    border-top-right-radius: 8px;
+    /* вид курсора */
+    cursor: pointer;
+    /* отображение элемента как flex */
+    display: flex;
+    /* выравниваем элементы внутри элемента по центру вдоль поперечной оси */
+    align-items: center;
+    /* выравниваем элементы внутри элемента по центру вдоль главной оси */
+    justify-content: center;
+    /* ширина элемента */
+    width: 60px;
+    /* высота элемента */
+    height: 50px;
+}
+
+    .btn-up::before {
+        content: "";
+        width: 40px;
+        height: 40px;
+        background: transparent no-repeat center center;
+        background-size: 100% 100%;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23fff' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z'/%3E%3C/svg%3E");
+    }
+
+.btn-up_hide {
+    display: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .btn-up:hover {
+        background-color: #5e0000; /* цвет заднего фона при наведении */
+    }
+}
+
+
+.news {
+    width: 90%;
+    border-radius: 50px;
+    padding: 2%;
+    max-width: 600px;
+}
+
+.feedback2 {
+    width: 100%;
+    font-family: "Raleway";
+    background-color: #554D66;
+    font-size: 20px;
+    font-weight: 700;
+    color: #E8CFC4;
+    border-radius: 15px;
+    padding: 10px; /* Внутренний отступ для input */
+    border: none;
+    margin-bottom: 10px; /* Отступ снизу между input */
+    box-sizing: border-box; /* Учитываем padding в ширине */
+    display: flex;
+}
+
+.feedbackbutn2 {
+    width: 100%;
+    font-family: "Raleway";
+    background-color: #47485E;
+    ;
+    font-size: 20px;
+    font-weight: 700;
+    color: #E8CFC4;
+    border-radius: 15px;
+    padding: 10px; /* Внутренний отступ для кнопки */
+    border: none;
+    margin-top: 10px; /* Отступ сверху для кнопки */
+    box-sizing: border-box; /* Учитываем padding в ширине */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Анимация для background-color и color */
+}
+
+    .feedbackbutn2:hover {
+        background-color: #8b0000; /* Новый цвет фона при наведении */
+        color: #E8CFC4; /* Новый цвет текста при наведении */
+    }
+
+.feedback_back2 {
+    font-family: "Raleway";
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 15px;
+    padding: 20px;
+    color: #554D66;
+}
+
+    .feedback_back2 h1 {
+        font-size: 25px;
+        font-weight: 700;
+        margin-top: 0%;
+        margin-left: 2%;
+        margin-bottom: 0%; /* Отступ снизу для заголовков */
+        color: #554D66;
+    }
+
+    .feedback_back2 h6 {
+        font-size: 25px;
+        font-weight: 700;
+        margin-top: 0%;
+        margin-left: 2%;
+        margin-bottom: 0%; /* Отступ снизу для заголовков */
+        color: #554D66;
+    }
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.list-menu {
+    display: flex;
+    list-style: none;
+    font-family: "Raleway";
+    font-size: 20px;
+}
+
+    .list-menu > li > a {
+        color: #E8CFC4;
+        display: block;
+        padding: 5px 0px;
+    }
+
+        .list-menu > li > a:hover {
+            background: #5a0000;
+            border-radius: 5px;
+        }
+
+#btn-menu {
+    display: none;
+}
+
+    #btn-menu + label {
+        display: none;
+        position: relative;
+        color: #E8CFC4;
+        height: 46px;
+        width: 46px;
+        z-index: 1;
+        cursor: pointer;
+    }
+
+        #btn-menu + label:before {
+            content: url("/files/img/menu.svg");
+            display: inline-block;
+            font-family: 'FontAwesome';
+            font-size: 22px;
+        }
+
+    #btn-menu:checked + label:before {
+        content: url("/files/img/menuhover.png");
+        color: #E8CFC4;
+    }
+
+@media screen and (max-width: 767px) {
+
+    #btn-menu + label {
+        display: inline-block;
+    }
+
+        #btn-menu + label + .list-menu {
+            display: none;
+        }
+
+    #btn-menu:checked + label + .list-menu {
+        display: block;
+    }
+}
+
+
+.news-container {
+    color: #E8CFC4;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 900;
+    width: 72%;
+    margin: auto;
+    margin-top: 1%;
+}
+
+.news-block {
+    padding: 2%;
+    width: 100%;
+    margin: auto;
+    border-radius: 15px;
+    background-color: #8b0000;
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+    
+
+    .news-container {
+        width: 89%;
+    }
+}
+
+
+.feedbackit {
+    width: 100%;
+    font-family: "Raleway";
+    background-color: #c9b3aa;
+    font-size: 20px;
+    font-weight: 700;
+    color: #47485E;
+    border-radius: 15px;
+    padding: 10px; /* Внутренний отступ для input */
+    border: none;
+    margin-bottom: 10px; /* Отступ снизу между input */
+    box-sizing: border-box; /* Учитываем padding в ширине */
+    display: flex;
+}
+
+.feedbackbutnit {
+    width: 100%;
+    font-family: "Raleway";
+    background-color: #47485E;
+    ;
+    font-size: 20px;
+    font-weight: 700;
+    color: #E8CFC4;
+    border-radius: 15px;
+    padding: 10px; /* Внутренний отступ для кнопки */
+    border: none;
+    margin-top: 10px; /* Отступ сверху для кнопки */
+    box-sizing: border-box; /* Учитываем padding в ширине */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Анимация для background-color и color */
+}
+
+    .feedbackbutnit:hover {
+        background-color: #8b0000; /* Новый цвет фона при наведении */
+        color: #E8CFC4; /* Новый цвет текста при наведении */
+    }
+
+.feedback_backit {
+    font-family: "Raleway";
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+    .feedback_backit h1 {
+        color: #554D66;
+        font-size: 25px;
+        font-weight: 700;
+        margin-top: 0%;
+        margin-left: 0%;
+        margin-bottom: 0%; /* Отступ снизу для заголовков */
+    }

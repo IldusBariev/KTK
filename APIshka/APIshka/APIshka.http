@@ -1,0 +1,6 @@
+@APIshka_HostAddress = http://localhost:5155
+
+GET {{APIshka_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

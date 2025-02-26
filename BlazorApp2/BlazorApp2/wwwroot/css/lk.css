@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+
+body {
+	font-family: Raleway;
+	color: #E8CFC4;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.container_lk {
+	width: 72%;
+	margin: 20px auto 0 auto;
+	padding: 10px 1%;
+}
+
+/*Последние два из страницы newsAdd*/
+.auth {
+	width: 100%;
+	background-color: #E8CFC4;
+	color: #47485E;
+	border-radius: 15px;
+	padding: 10px; /* Внутренний отступ для input */
+	border: none;
+	margin-bottom: 10px; /* Отступ снизу между input */
+	box-sizing: border-box; /* Учитываем padding в ширине */
+	display: flex;
+}
+
+.authbutn {
+	width: 100%;
+	background-color: #47485E;
+	color: #E8CFC4;
+	border-radius: 15px;
+	padding: 10px; /* Внутренний отступ для кнопки */
+	border: none;
+	margin-top: 10px; /* Отступ сверху для кнопки */
+	box-sizing: border-box; /* Учитываем padding в ширине */
+	transition: background-color 0.3s ease, color 0.3s ease; /* Анимация для background-color и color */
+}
+
+	.authbutn:hover {
+		background-color: #E8CFC4; /* Новый цвет фона при наведении */
+		color: #554D66; /* Новый цвет текста при наведении */
+	}
+
+.auth_back {
+	max-width: 30%;
+	background-color: #8B0000;
+	border-radius: 15px;
+	padding: 20px;
+}
+
+.auth_back p {
+	font-size: 25px;
+	font-weight: 700;
+	margin-top: 0%;
+	margin-left: 2%;
+	margin-bottom: 5px; /* Отступ снизу для заголовков */
+
+}
+.auth_back span {
+	font-size: 12px;
+	font-weight: 700;
+	margin: 2px 0;
+	color:red;
+}
+
+
+@media (max-width: 1900) {
+
+	.auth_back p {
+		font-size: 20px;
+	}
+
+	.auth {
+		padding: 8px;
+		margin: 0 0 8px 0;
+	}
+	.auth,
+	.authbutn {
+		border-radius: 10px;
+	}
+}
+
+@media (max-width: 1500px) {
+
+
+	.auth_back p {
+		font-size: 17px;
+	}
+
+}
+
+@media (max-width: 1300px) {
+	header {
+		padding: 7px 0;
+	}
+
+	.auth_back p {
+		font-size: 14px;
+	}
+
+	.authbutn,
+	.auth {
+		border-radius: 8px;
+		height: 25%;
+	}
+}

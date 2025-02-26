@@ -1,0 +1,95 @@
+﻿body {
+}
+
+.news-container {
+    font-family: sans-serif;
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #8B0000;
+    border-radius: 10px;
+}
+
+.news-header {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.news-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /*Важно! Убираем space-around, чтобы блоки не растягивались */
+    gap: 20px; /* Добавляем отступ между блоками */
+}
+
+.news-item {
+    width: calc(50% - 20px); /* Два элемента в ряд на средних экранах, учитывая отступы */
+    /*    border: 1px solid #ddd;*/
+    background-color: #F2D7D5;
+    border-radius: 8px;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex; /* Включаем flexbox для news-item */
+    flex-direction: column; /* Элементы внутри располагаются в колонку */
+}
+
+.news-image {
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+    .news-image img {
+        height: 250px;
+        width: 100%;
+        object-fit: cover;
+        object-position: top;
+        border-radius: 10px;
+    }
+
+.news-content {
+    text-align: left;
+    flex-wrap: wrap;
+    flex-grow: 1; /* Важно! Растягиваем news-content, чтобы занимать все доступное пространство */
+}
+
+.news-content h3 {
+    font-weight: 700;
+    font-size: 26px;
+    color: red;
+    margin-bottom: 5px;
+}
+
+.news-content p {
+    font-weight: 500;
+    font-size: 22px;
+    color: black;
+}
+
+.news-content h3 ::first-letter,
+.news-content p ::first-letter {
+    text-transform: uppercase;
+}
+
+/* Для экранов меньше 768px (мобильные) */
+@media (max-width: 768px) {
+    .news-list {
+        flex-direction: column; /* Один элемент в колонку на мобильных */
+    }
+
+    .news-item {
+        width: 100%;
+    }
+    .news-image img {
+        object-fit: cover;
+        object-position: center;
+        border-radius: 10px;
+    }
+
+}
+
+/* Для экранов больше 960px (широкие экраны) */
+@media (min-width: 960px) {
+    .news-item {
+        width: calc(33.33% - 20px); /* Три элемента в ряд на широких экранах, учитывая отступы */
+    }
+}
