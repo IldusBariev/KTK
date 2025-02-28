@@ -1,13 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "8nKF6Skr8qg=",
+  "dgSpecHash": "WDLJ6toNon4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Диляра\\Desktop\\Base643\\Base64-main\\BlazorApp2\\BlazorApp2\\BlazorApp2.csproj",
+  "projectFilePath": "C:\\Users\\Диляра\\Desktop\\KTK\\BlazorApp2\\BlazorApp2\\BlazorApp2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Диляра\\.nuget\\packages\\blazored.localstorage\\4.5.0\\blazored.localstorage.4.5.0.nupkg.sha512",
     "C:\\Users\\Диляра\\.nuget\\packages\\microsoft.aspnetcore.authorization\\8.0.11\\microsoft.aspnetcore.authorization.8.0.11.nupkg.sha512",
     "C:\\Users\\Диляра\\.nuget\\packages\\microsoft.aspnetcore.components\\8.0.11\\microsoft.aspnetcore.components.8.0.11.nupkg.sha512",
     "C:\\Users\\Диляра\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\8.0.11\\microsoft.aspnetcore.components.analyzers.8.0.11.nupkg.sha512",
+    "C:\\Users\\Диляра\\.nuget\\packages\\microsoft.aspnetcore.components.authorization\\7.0.0\\microsoft.aspnetcore.components.authorization.7.0.0.nupkg.sha512",
     "C:\\Users\\Диляра\\.nuget\\packages\\microsoft.aspnetcore.components.forms\\8.0.11\\microsoft.aspnetcore.components.forms.8.0.11.nupkg.sha512",
     "C:\\Users\\Диляра\\.nuget\\packages\\microsoft.aspnetcore.components.web\\8.0.11\\microsoft.aspnetcore.components.web.8.0.11.nupkg.sha512",
     "C:\\Users\\Диляра\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\8.0.11\\microsoft.aspnetcore.components.webassembly.8.0.11.nupkg.sha512",

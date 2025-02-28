@@ -10,7 +10,7 @@ namespace APIshka.DbContexts
     {
 
     public DbSet<User> Users { get; set; } = null!;
-    public DbSet<New> News { get; set; } = null!;
+    public DbSet<NewsEntities> News { get; set; } = null!;
 
 
         public AppDbContext() // Конструктор без параметров
@@ -34,10 +34,15 @@ namespace APIshka.DbContexts
             {
                 user.HasKey(u => u.UserId);
 
-               
+                user
+                .HasIndex(u => u.Username)
+                .IsUnique();
+
+                //user.HasData(
+                //    new User() { UserId = 1, Username = "123", Password = "123" });
             });
 
-            modelBuilder.Entity<New>(newModel =>
+            modelBuilder.Entity<NewsEntities>(newModel =>
             {
                 newModel.HasKey(n => n.NewsId);
 

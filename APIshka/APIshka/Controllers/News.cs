@@ -2,9 +2,11 @@
 using APIshka.Entities;
 using APIshka.Request;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System;
+using System.Text;
 using System.Xml.Linq;
 
 namespace APIshka.Controllers
@@ -25,10 +27,9 @@ namespace APIshka.Controllers
         // Для добавления новостей. Фотографию в массив байтов
         [Authorize]
         [HttpPost("add_news")]
-        public async Task<IActionResult> AddNewsAsync([FromForm] CreateNewsRequest request)
+        public async Task<IActionResult> AddNewsAsync([FromForm]CreateNewsRequest request)
         {
             string? imagesName = null;
-            AppDbContext dbContext = new AppDbContext();
 
             if (string.IsNullOrWhiteSpace(request.Title))
             {
@@ -51,8 +52,9 @@ namespace APIshka.Controllers
 
                 }
             }
-            dbContext.News.Add(new New(request.Title, request.Description, imagesName));
-            dbContext.SaveChanges();
+
+            await _dbContext.News.AddAsync(new NewsEntities(request.Title, request.Description, imagesName));
+            await _dbContext.SaveChangesAsync();
 
 
             return Created();
@@ -63,20 +65,20 @@ namespace APIshka.Controllers
         [HttpGet("all_news")]
         public async Task<IActionResult> GetAllNewsAsync()
         {
-            AppDbContext dbContext = new AppDbContext();
-            var columns = dbContext.News
+            var columns = await _dbContext.News
                 .Select(n => new
                 {
                     n.NewsId,
                     n.Title,
                     n.Description,
-                    Image = n.ImageName != null ? $"http://localhost:5155/static/files/images/{n.ImageName}" : null
+                    Image = n.ImageName != null ? $"http://192.168.0.7:5155/static/files/images/{n.ImageName}" : null
                 })
-                .ToList();
+                .ToListAsync();
 
 
             return Ok(columns);
         }
+
 
     }
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Диляра\\Desktop\\Base643\\Base64-main\\APIshka\\APIshka\\APIshka.csproj": {}
+    "C:\\Users\\Диляра\\Desktop\\KTK\\APIshka\\APIshka\\APIshka.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Диляра\\Desktop\\Base643\\Base64-main\\APIshka\\APIshka\\APIshka.csproj": {
+    "C:\\Users\\Диляра\\Desktop\\KTK\\APIshka\\APIshka\\APIshka.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Диляра\\Desktop\\Base643\\Base64-main\\APIshka\\APIshka\\APIshka.csproj",
+        "projectUniqueName": "C:\\Users\\Диляра\\Desktop\\KTK\\APIshka\\APIshka\\APIshka.csproj",
         "projectName": "APIshka",
-        "projectPath": "C:\\Users\\Диляра\\Desktop\\Base643\\Base64-main\\APIshka\\APIshka\\APIshka.csproj",
+        "projectPath": "C:\\Users\\Диляра\\Desktop\\KTK\\APIshka\\APIshka\\APIshka.csproj",
         "packagesPath": "C:\\Users\\Диляра\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Диляра\\Desktop\\Base643\\Base64-main\\APIshka\\APIshka\\obj\\",
+        "outputPath": "C:\\Users\\Диляра\\Desktop\\KTK\\APIshka\\APIshka\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

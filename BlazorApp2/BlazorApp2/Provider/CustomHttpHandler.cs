@@ -1,4 +1,4 @@
-﻿
+﻿using System.Net.Http.Headers;
 using Blazored.LocalStorage;
 
 namespace BlazorApp2.Provider
@@ -14,16 +14,10 @@ namespace BlazorApp2.Provider
 
         protected override async Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
         {
-            if (request.RequestUri.AbsolutePath.ToLower().Contains("User/login"))
-            {
-                return await base.SendAsync(request, cancellationToken);
-
-            }
-
             var token = await _localStorageService.GetItemAsync<string>("jwt-token");
             if (!string.IsNullOrEmpty(token))
             {
-                request.Headers.Add("User/login", $"Bearer {token}");
+                request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
             }
             return await base.SendAsync(request, cancellationToken);
         }

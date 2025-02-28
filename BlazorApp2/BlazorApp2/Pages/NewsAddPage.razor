@@ -1,0 +1,193 @@
+﻿@using BlazorApp2.Request
+@using System.Net
+@using System.Net.Http.Headers
+@* @attribute [Authorize] *@
+@page "/newsAdd"
+
+<PageTitle>AfterAuthoPage</PageTitle>
+
+
+@* NavigationManager.NavigateTo("/login"); *@
+
+
+<div class="news-add-wrapper">
+
+
+    <div class="work-from-news">
+
+
+        <div class="news-add-container">
+
+            <EditForm Model="newsAdd"
+                      OnValidSubmit="AddNewsAsync">
+                <DataAnnotationsValidator />
+
+
+                <p>Загловок новости</p>
+                <InputTextArea class="news-title"
+                               @bind-Value="newsAdd.Title"
+                               placeholder="Загаловок"
+                               rows="3" />
+                <ValidationMessage For="() => newsAdd.Title" />
+
+                <p>Содеражние</p>
+                <InputTextArea class="news-description"
+                               max-heigth="15%"
+                               @bind-Value="newsAdd.Description"
+                               placeholder="Описание"
+                               rows="20" />
+                <ValidationMessage For="() => newsAdd.Description" />
+
+                <p>Фотография</p>
+                <InputFile OnChange="@OnInputFileChange"
+                           accept=".jpeg, .png, .jpg" />
+
+                <button type="submit"
+                        class="authbutn">
+                    Добавить новость
+                </button>
+
+            </EditForm>
+
+        </div>
+
+        <div class="empty-div"></div>
+
+        <div class="news-view-container">
+            <h2>Примерный вид</h2>
+            <div class="news-main-views">
+
+
+
+                <div class="news-view-block">
+
+                    @if (imageBase64 != null)
+                    {
+                        <div class="news-image-container">
+                            <img src="@imageBase64">
+                        </div>
+                    }
+
+                    <div class="news-main-container">
+
+                        <h3>@newsAdd.Title</h3>
+
+                        <p>@newsAdd.Description</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    @if (!string.IsNullOrWhiteSpace(Message))
+    {
+        <p>@Message</p>
+    }
+
+</div>
+
+
+@code {
+
+    [Inject] private ILocalStorageService localStorageService { get; set; }
+    [Inject] private NavigationManager NavigationManager { get; set; }
+    [Inject] IHttpClientFactory HttpClientFactory { get; set; }
+
+    // private bool IsAuthenticated = false;
+
+    private string Message;
+    private NewsAdd newsAdd = new();
+
+    private string? imageBase64;
+    private IBrowserFile? selectedFile;
+
+    private async Task OnInputFileChange(InputFileChangeEventArgs e)
+    {
+        selectedFile = e.File;
+        if (selectedFile != null)
+        {
+
+            if (!selectedFile.ContentType.StartsWith("image/"))
+            {
+                Message = "Можно загружать только изображения";
+                return;
+            }
+
+            using var stream = selectedFile.OpenReadStream(maxAllowedSize: 512000);
+            using var memoryStream = new MemoryStream();
+            await stream.CopyToAsync(memoryStream);
+            imageBase64 = $"data:{selectedFile.ContentType};base64,{Convert.ToBase64String(memoryStream.ToArray())}";
+
+        }
+        StateHasChanged(); // Force a re-render
+    }
+
+    // Добавление новостей
+    private async Task AddNewsAsync()
+    {
+        try
+        {
+            var content = new MultipartFormDataContent();
+            content.Add(new StringContent(newsAdd.Title), "Title");
+            content.Add(new StringContent(newsAdd.Description), "Description");
+
+
+            if (selectedFile != null)
+            {
+                var stream = selectedFile.OpenReadStream();
+                var streamContent = new StreamContent(stream);
+                streamContent.Headers.ContentType = new MediaTypeHeaderValue(selectedFile.ContentType);
+                content.Add(streamContent, "Image", selectedFile.Name);
+            }
+            else
+            {
+                content.Add(new StringContent(""), "Image");
+            }
+
+            var response = await HttpClientFactory.CreateClient("APIshecka").PostAsync("News/add_news", content);
+
+            if (response.IsSuccessStatusCode)
+            {
+                Message = "Новость успешно добавлена";
+                return;
+            }
+
+            Message = await response.Content.ReadAsStringAsync();
+            return;
+
+        }
+        catch (HttpRequestException e)
+        {
+            Message = $"Error: {e.Message}";
+        }
+        catch (Exception e)
+        {
+            Message = $"Error: {e.Message}";
+        }
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            var token = await localStorageService.GetItemAsync<string>("jwt-token"); // Извлекаем токен
+            if (string.IsNullOrEmpty(token))
+            {
+                NavigationManager.NavigateTo("/login"); // Если токена нет, перенаправляем на страницу входа
+            }
+            else
+            {
+                HttpClientFactory.CreateClient("APIshechka").DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token); // Добавляем токен в заголовки
+            }
+        }
+        catch (Exception ex)
+        {
+            Message = $"Ошибка: {ex.Message}";
+        }
+    }
+
+}

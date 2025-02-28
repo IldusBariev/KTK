@@ -46,7 +46,7 @@
 
 @code {
     [Inject]
-    private HttpClient HttpClient { get; set; }
+    private IHttpClientFactory _factory { get; set; }
 
     private string? Message;
     private List<GetAllNews>? getAllNews;
@@ -56,7 +56,7 @@
     {
         try
         {
-            getAllNews = await HttpClient.GetFromJsonAsync<List<GetAllNews>>("News/all_news");
+            getAllNews = await _factory.CreateClient("APIshecka").GetFromJsonAsync<List<GetAllNews>>("News/all_news");
         }
         catch (HttpRequestException e)
         {

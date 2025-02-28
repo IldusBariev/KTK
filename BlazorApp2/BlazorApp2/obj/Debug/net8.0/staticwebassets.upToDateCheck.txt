@@ -8,6 +8,9 @@ wwwroot\css\reset.css
 wwwroot\icon_ktk.svg
 wwwroot\icon-192.png
 wwwroot\index.html
+wwwroot\js\js\btnup.js
+wwwroot\js\js\napravlenia copy.js
+wwwroot\js\js\napravlenia.js
 wwwroot\menu.svg
 wwwroot\menuhover.png
 wwwroot\NEWS\1.png

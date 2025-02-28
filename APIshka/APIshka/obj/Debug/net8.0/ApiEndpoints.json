@@ -36,9 +36,30 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "APIshka.Controllers.User",
-    "Method": "Authorization",
-    "RelativePath": "User/login",
+    "ContainingType": "APIshka.Controllers.Users",
+    "Method": "AddNewUserAsync",
+    "RelativePath": "Users/addUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "username",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "password",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIshka.Controllers.Users",
+    "Method": "AuthorizationAsync",
+    "RelativePath": "Users/login",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,

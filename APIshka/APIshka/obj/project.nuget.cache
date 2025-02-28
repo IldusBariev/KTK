@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ss3cMwOI3pM=",
+  "dgSpecHash": "UbrOmC0Cd/U=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Диляра\\Desktop\\Base643\\Base64-main\\APIshka\\APIshka\\APIshka.csproj",
+  "projectFilePath": "C:\\Users\\Диляра\\Desktop\\KTK\\APIshka\\APIshka\\APIshka.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Диляра\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\Диляра\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

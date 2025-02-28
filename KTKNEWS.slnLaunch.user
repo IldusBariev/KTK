@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "Новый профиль",
+    "Projects": [
+      {
+        "Path": "BlazorApp2\\BlazorApp2\\BlazorApp2.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "APIshka\\APIshka\\APIshka.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

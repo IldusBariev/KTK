@@ -1,5 +1,4 @@
-﻿@using Blazored.LocalStorage
-@using Microsoft.AspNetCore.Components.Forms
+﻿@using Microsoft.AspNetCore.Components.Forms
 @using Microsoft.AspNetCore.Components.Web
 @using System.Net
 @using System.Text.Json
@@ -30,6 +29,7 @@
             <p>Пароль</p>
 
             <InputText placeholder="Введите пароль"
+            typeof="password"
             class="auth"
             @bind-Value="user.Password" />
             <ValidationMessage For="() => user.Password" />
@@ -53,6 +53,8 @@
     [Inject] private ILocalStorageService? LocalStorageService { get; set; }
     [Inject] private IHttpClientFactory? HttpClientFactory { get; set; }
 
+    // [CascadingParameter] public Task<AuthenticationState> AuthenticationState { get; set; }
+
     private User user = new();
     private string LoginResult = "";
 
@@ -63,7 +65,7 @@
         {
 
             var httpClient = HttpClientFactory.CreateClient("APIshecka");
-            var response = await httpClient.PostAsJsonAsync("User/login", user);
+            var response = await httpClient.PostAsJsonAsync("Users/login", user);
 
             if (response.StatusCode == HttpStatusCode.BadRequest) {
 
@@ -85,7 +87,7 @@
                 var tokenResponse = await response.Content.ReadFromJsonAsync<JwtTokenResponse>();
 
                 await LocalStorageService.SetItemAsync<string>("jwt-token", tokenResponse.JwtToken);
-                NavigationManager.NavigateTo("afterAuthoPage", true);
+                NavigationManager.NavigateTo("newsAdd", true);
                 return;
             }
         }
