@@ -856,3 +856,4 @@ C:\Users\Диляра\Desktop\KTK\APIshka\APIshka\obj\Debug\net8.0\refint\APIshk
 C:\Users\Диляра\Desktop\KTK\APIshka\APIshka\obj\Debug\net8.0\APIshka.pdb
 C:\Users\Диляра\Desktop\KTK\APIshka\APIshka\obj\Debug\net8.0\APIshka.genruntimeconfig.cache
 C:\Users\Диляра\Desktop\KTK\APIshka\APIshka\obj\Debug\net8.0\ref\APIshka.dll
+C:\Users\Диляра\Desktop\KTK\APIshka\APIshka\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

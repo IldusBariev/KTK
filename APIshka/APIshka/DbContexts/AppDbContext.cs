@@ -38,6 +38,7 @@ namespace APIshka.DbContexts
                 .HasIndex(u => u.Username)
                 .IsUnique();
 
+                //Для добавления первоначального пользака
                 //user.HasData(
                 //    new User() { UserId = 1, Username = "123", Password = "123" });
             });
