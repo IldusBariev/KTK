@@ -1005,7 +1005,6 @@ a {
     width: 100%;
     font-family: "Raleway";
     background-color: #47485E;
-    ;
     font-size: 20px;
     font-weight: 700;
     color: #E8CFC4;
@@ -1089,14 +1088,14 @@ a {
     }
 
         #btn-menu + label:before {
-            content: url("/files/img/menu.svg");
+            content: url("../menu.svg");
             display: inline-block;
             font-family: 'FontAwesome';
             font-size: 22px;
         }
 
     #btn-menu:checked + label:before {
-        content: url("/files/img/menuhover.png");
+        content: url("../menuhover.png");
         color: #E8CFC4;
     }
 
@@ -1165,7 +1164,6 @@ a {
     width: 100%;
     font-family: "Raleway";
     background-color: #47485E;
-    ;
     font-size: 20px;
     font-weight: 700;
     color: #E8CFC4;

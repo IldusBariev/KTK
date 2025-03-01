@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\\u0414\u0438\u043B\u044F\u0440\u0430\\Desktop\\KTK\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E18D0760-6F5C-4B0A-920E-EDA1419BB3E7}|APIshka\\APIshka\\APIshka.csproj|c:\\users\\\u0434\u0438\u043B\u044F\u0440\u0430\\desktop\\ktk\\apishka\\apishka\\dbcontexts\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E18D0760-6F5C-4B0A-920E-EDA1419BB3E7}|APIshka\\APIshka\\APIshka.csproj|solutionrelative:apishka\\apishka\\dbcontexts\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E86B14C4-4090-4D65-ADB0-0BC150C7D5CB}|BlazorApp2\\BlazorApp2\\BlazorApp2.csproj|c:\\users\\\u0434\u0438\u043B\u044F\u0440\u0430\\desktop\\ktk\\blazorapp2\\blazorapp2\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E86B14C4-4090-4D65-ADB0-0BC150C7D5CB}|BlazorApp2\\BlazorApp2\\BlazorApp2.csproj|solutionrelative:blazorapp2\\blazorapp2\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,14 +23,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\\u0414\u0438\u043B\u044F\u0440\u0430\\Desktop\\KTK\\APIshka\\APIshka\\DbContexts\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "APIshka\\APIshka\\DbContexts\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\\u0414\u0438\u043B\u044F\u0440\u0430\\Desktop\\KTK\\APIshka\\APIshka\\DbContexts\\AppDbContext.cs",
-              "RelativeToolTip": "APIshka\\APIshka\\DbContexts\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-28T18:54:37.528Z",
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\\u0414\u0438\u043B\u044F\u0440\u0430\\Desktop\\KTK\\BlazorApp2\\BlazorApp2\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "BlazorApp2\\BlazorApp2\\wwwroot\\index.html",
+              "ToolTip": "C:\\Users\\\u0414\u0438\u043B\u044F\u0440\u0430\\Desktop\\KTK\\BlazorApp2\\BlazorApp2\\wwwroot\\index.html",
+              "RelativeToolTip": "BlazorApp2\\BlazorApp2\\wwwroot\\index.html",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAIwBMAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-03-01T18:08:45.381Z",
               "EditorCaption": ""
             }
           ]

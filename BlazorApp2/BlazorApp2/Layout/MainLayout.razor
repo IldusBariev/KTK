@@ -1,6 +1,6 @@
 ﻿@inherits LayoutComponentBase
 
-
+<div class="btn-up btn-up_hide desktop-only"></div>
 <header class="container">
 
     <img src="/icon_ktk.svg"
@@ -48,3 +48,19 @@
 </header>
 
 @Body
+
+@code {
+    [Inject] private IJSRuntime JS { get; set; }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            // Регистрируем метод Blazor для вызова из JavaScript
+            await JS.InvokeVoidAsync("eval", "window.BlazorApp2 = { OnTokenExpired: () => DotNet.invokeMethodAsync('BlazorApp2', 'OnTokenExpired') }");
+
+            // Проверяем истечение токена при загрузке страницы
+            await JS.InvokeVoidAsync("checkTokenExpiration");
+        }
+    }
+}

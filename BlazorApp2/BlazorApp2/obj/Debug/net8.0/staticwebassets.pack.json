@@ -81,16 +81,20 @@
       "PackagePath": "staticwebassets\\index.html"
     },
     {
-      "Id": "C:\\Users\\Диляра\\Desktop\\KTK\\BlazorApp2\\BlazorApp2\\wwwroot\\js\\js\\btnup.js",
-      "PackagePath": "staticwebassets\\js\\js\\btnup.js"
+      "Id": "C:\\Users\\Диляра\\Desktop\\KTK\\BlazorApp2\\BlazorApp2\\wwwroot\\js\\btnup.js",
+      "PackagePath": "staticwebassets\\js\\btnup.js"
     },
     {
-      "Id": "C:\\Users\\Диляра\\Desktop\\KTK\\BlazorApp2\\BlazorApp2\\wwwroot\\js\\js\\napravlenia copy.js",
-      "PackagePath": "staticwebassets\\js\\js\\napravlenia copy.js"
+      "Id": "C:\\Users\\Диляра\\Desktop\\KTK\\BlazorApp2\\BlazorApp2\\wwwroot\\js\\interop.js",
+      "PackagePath": "staticwebassets\\js\\interop.js"
     },
     {
-      "Id": "C:\\Users\\Диляра\\Desktop\\KTK\\BlazorApp2\\BlazorApp2\\wwwroot\\js\\js\\napravlenia.js",
-      "PackagePath": "staticwebassets\\js\\js\\napravlenia.js"
+      "Id": "C:\\Users\\Диляра\\Desktop\\KTK\\BlazorApp2\\BlazorApp2\\wwwroot\\js\\napravlenia copy.js",
+      "PackagePath": "staticwebassets\\js\\napravlenia copy.js"
+    },
+    {
+      "Id": "C:\\Users\\Диляра\\Desktop\\KTK\\BlazorApp2\\BlazorApp2\\wwwroot\\js\\napravlenia.js",
+      "PackagePath": "staticwebassets\\js\\napravlenia.js"
     },
     {
       "Id": "C:\\Users\\Диляра\\Desktop\\KTK\\BlazorApp2\\BlazorApp2\\wwwroot\\menu.svg",

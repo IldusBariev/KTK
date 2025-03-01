@@ -82,11 +82,10 @@
             if (response.StatusCode == HttpStatusCode.OK)
             {
 
-                // await JS.InvokeVoidAsync("alert", $"{response.Content.ReadAsStringAsync()}");
-
                 var tokenResponse = await response.Content.ReadFromJsonAsync<JwtTokenResponse>();
 
                 await LocalStorageService.SetItemAsync<string>("jwt-token", tokenResponse.JwtToken);
+                await JS.InvokeVoidAsync("setTokenExpirationTimer", 1);
                 NavigationManager.NavigateTo("newsAdd", true);
                 return;
             }

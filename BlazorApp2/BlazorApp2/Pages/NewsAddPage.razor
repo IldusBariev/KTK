@@ -19,31 +19,31 @@
         <div class="news-add-container">
 
             <EditForm Model="newsAdd"
-                      OnValidSubmit="AddNewsAsync">
+            OnValidSubmit="AddNewsAsync">
                 <DataAnnotationsValidator />
 
 
                 <p>Загловок новости</p>
                 <InputTextArea class="news-title"
-                               @bind-Value="newsAdd.Title"
-                               placeholder="Загаловок"
-                               rows="3" />
+                @bind-Value="newsAdd.Title"
+                placeholder="Загаловок"
+                rows="3" />
                 <ValidationMessage For="() => newsAdd.Title" />
 
                 <p>Содеражние</p>
                 <InputTextArea class="news-description"
-                               max-heigth="15%"
-                               @bind-Value="newsAdd.Description"
-                               placeholder="Описание"
-                               rows="20" />
+                max-heigth="15%"
+                @bind-Value="newsAdd.Description"
+                placeholder="Описание"
+                rows="20" />
                 <ValidationMessage For="() => newsAdd.Description" />
 
                 <p>Фотография</p>
                 <InputFile OnChange="@OnInputFileChange"
-                           accept=".jpeg, .png, .jpg" />
+                accept=".jpeg, .png, .jpg" />
 
                 <button type="submit"
-                        class="authbutn">
+                class="authbutn">
                     Добавить новость
                 </button>
 
@@ -96,7 +96,7 @@
     [Inject] private ILocalStorageService localStorageService { get; set; }
     [Inject] private NavigationManager NavigationManager { get; set; }
     [Inject] IHttpClientFactory HttpClientFactory { get; set; }
-
+    [Inject] private IJSRuntime JS { get; set; }
     // private bool IsAuthenticated = false;
 
     private string Message;
