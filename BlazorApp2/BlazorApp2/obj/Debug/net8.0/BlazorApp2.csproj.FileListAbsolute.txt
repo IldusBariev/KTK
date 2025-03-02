@@ -6361,6 +6361,6 @@ C:\Users\Диляра\Desktop\KTK\BlazorApp2\BlazorApp2\bin\Debug\net8.0\wwwroot
 C:\Users\Диляра\Desktop\KTK\BlazorApp2\BlazorApp2\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Authorization.dll
 C:\Users\Диляра\Desktop\KTK\BlazorApp2\BlazorApp2\obj\Debug\net8.0\webcil\Microsoft.AspNetCore.Components.Authorization.wasm
 C:\Users\Диляра\Desktop\KTK\BlazorApp2\BlazorApp2\obj\Debug\net8.0\compressed\93a9j7w6ai-ztgzcylrt3.gz
-C:\Users\Диляра\Desktop\KTK\BlazorApp2\BlazorApp2\obj\Debug\net8.0\compressed\z4nfu4l7hl-qk1qpu9wka.gz
-C:\Users\Диляра\Desktop\KTK\BlazorApp2\BlazorApp2\obj\Debug\net8.0\compressed\6yfc49io4u-6zp72ygne5.gz
-C:\Users\Диляра\Desktop\KTK\BlazorApp2\BlazorApp2\obj\Debug\net8.0\compressed\ze7vl5o02k-opu113775w.gz
+C:\Users\Диляра\Desktop\KTK\BlazorApp2\BlazorApp2\obj\Debug\net8.0\compressed\z4nfu4l7hl-gb61gn8ryk.gz
+C:\Users\Диляра\Desktop\KTK\BlazorApp2\BlazorApp2\obj\Debug\net8.0\compressed\6yfc49io4u-ya79rt7urq.gz
+C:\Users\Диляра\Desktop\KTK\BlazorApp2\BlazorApp2\obj\Debug\net8.0\compressed\ze7vl5o02k-lntrf4wp3p.gz

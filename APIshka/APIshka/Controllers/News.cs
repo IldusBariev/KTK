@@ -60,12 +60,13 @@ namespace APIshka.Controllers
             return Created();
         }
 
-        // возвращает данные о новости и изображение
+        // возвращает данные о новости и изображение (Порядок идет от новых к старым)
         
         [HttpGet("all_news")]
         public async Task<IActionResult> GetAllNewsAsync()
         {
             var columns = await _dbContext.News
+                .OrderByDescending(n => n.CreateDate)
                 .Select(n => new
                 {
                     n.NewsId,

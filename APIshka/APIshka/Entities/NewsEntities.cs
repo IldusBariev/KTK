@@ -9,7 +9,7 @@ namespace APIshka.Entities
         public int NewsId { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
-        public string ImageName { get; set; }
+        public string? ImageName { get; set; }
         public DateTime CreateDate { get; set; }
 
         public NewsEntities()
@@ -20,7 +20,7 @@ namespace APIshka.Entities
         public NewsEntities(
             string title,
             string description,
-            string imageName
+            string? imageName
             )
         {
             Title = title;

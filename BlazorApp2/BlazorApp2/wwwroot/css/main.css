@@ -791,6 +791,9 @@ a {
         margin-right: auto; /* Центрирование блоков */
     }
 
+    .linknav {
+        font-size: 15px;
+    }
 
     .header {
         width: 90%; /* Блоки занимают всю ширину контейнера */

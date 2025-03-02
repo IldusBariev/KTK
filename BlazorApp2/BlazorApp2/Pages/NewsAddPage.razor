@@ -145,7 +145,7 @@
             }
             else
             {
-                content.Add(new StringContent(""), "Image");
+                content.Add(new StringContent("null"), "Image");
             }
 
             var response = await HttpClientFactory.CreateClient("APIshecka").PostAsync("News/add_news", content);
